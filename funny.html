@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>meme people - Funny posts</title>
+    <meta name="description" content="meme people - Like memes? I gotchu fam">
+    <link id="favicon" rel="icon" href="https://cdn.hyperdev.com/us-east-1%3A243b54df-51d0-4f48-b3a8-a037e040d8ea%2Ffavicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+    <style>
+      #main {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto 0;
+        text-align: center;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -55%);
+        -moz-transform: translate(-50%, -55%);
+        -ms-transform: translate(-50%, -55%);
+        transform: translate(-50%, -55%);
+      }
+      
+      #main ul {
+        list-style: none;
+        margin-bottom: 40px;
+      }
+      
+      #main ul li {
+        display: inline-block;
+        height: 100px;
+        line-height: 130px;
+        vertical-align: middle;
+      }
+      
+      #main ul li.insta {
+        margin-right: 10%;
+      }
+      #main ul li.twitter {
+        margin-left: 10%;
+      }
+      
+      #main ul li.insta, #main ul li.twitter {
+        margin-top: 30px;
+      }
+      
+      #main ul a {
+        text-decoration: none;
+      }
+      
+      #main .insta a img, #main .twitter a img {
+        width: 35px;
+      }
+      
+      .username h3 {
+        font-size: 27px;
+      }
+      
+      .motto h1 {
+        margin-top: 70px;
+        font-size: 32px;
+      }
+      
+      @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) {
+        
+        .motto h1 {
+          margin-top: 30px;
+          font-size: 30px;
+        }
+        
+      }
+      
+      .meme_logo:hover, .insta img:hover, .twitter img:hover {
+        transform: scale(1.1, 1.1);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <ul>
+        <li class="insta"><a href="https://www.instagram.com/memep/" target="_blank"><img alt="Open memep Instagram page" title="Open memep profile on Instagram" src="https://cdn.hyperdev.com/us-east-1%3A243b54df-51d0-4f48-b3a8-a037e040d8ea%2Finsta_logo.png"></a></li>
+        <li><a href="/funny"><img class="meme_logo" alt="Like memes? I gotchu fam" title="Like memes? I gotchu fam" src="https://cdn.hyperdev.com/us-east-1%3A243b54df-51d0-4f48-b3a8-a037e040d8ea%2Fmeme_logo.png" width="130" height="130"></a></li>
+        <li class="twitter"><a href="https://www.twitter.com/memep/" target="_blank"><img alt="See what memep is tweeting about" title="See what memep is tweeting about" src="https://cdn.hyperdev.com/us-east-1%3A243b54df-51d0-4f48-b3a8-a037e040d8ea%2Ftwitter_logo.png"/></a></li>
+      </ul>
+      </div>
+      <div class="username"><a href="/funny"><h3>@memep</h3></a></div>
+      <div class="motto"><h1>Like memes? I gotchu fam</h1></div>
+    </div>
+    <script src="/insta.js"></script>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'user',
+          accessToken: '289263499.7fdbeed.01ddd60e955a4b978b6f2ba812d8b04e',
+          userId: '3481234555'
+        });
+      feed.run();
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81250537-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
