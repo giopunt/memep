@@ -44,7 +44,7 @@ a, a:hover {
 
 #logo {
   background-color: #43A5F6;
-  background-image: url("/images/logo-2pac.png");
+  background-image: url("images/logo-2pac.png");
   background-position: 54% center;
   background-repeat: no-repeat;
   background-size: 69.4px 90px;
