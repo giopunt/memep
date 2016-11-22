@@ -177,7 +177,9 @@ a, a:hover {
 }
 
 .info-page .content p a, .info-page .content p span {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
   font-weight: 400;
 }
 
