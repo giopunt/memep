@@ -211,6 +211,11 @@ a, a:hover {
 .info-page.form input {
   padding-left: 10px;
   border: 1px solid #333;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .info-page.form button {
@@ -218,7 +223,7 @@ a, a:hover {
  font-weight: 400;
  color: #FFF;
  border: 0;
- -webkit-appereance: none;
+ -webkit-appearance: none;
  text-transform: uppercase;
 }
 
